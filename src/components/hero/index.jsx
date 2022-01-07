@@ -5,7 +5,6 @@ const Hero = () => {
   const [dateToGet, setDateToGet] = useState("");
 
   const calculateTimeLeft = () => {
-    let year = new Date().getFullYear();
     let difference = +new Date(dateToGet) - +new Date();
 
     let timeLeft = {
@@ -67,7 +66,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="font-light tracking-[.6rem] text-xl sm:text-2xl">
-        {dateToGet.replaceAll("/", ".")}
+        {dateToGet && dateToGet.replaceAll("/", ".")}
       </div>
     </div>
   );

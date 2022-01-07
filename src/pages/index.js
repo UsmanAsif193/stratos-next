@@ -2,8 +2,7 @@ import React from "react";
 
 import Navbar from "../components/navbar";
 import Hero from "../components/hero";
-import QuestionList from "../components/questionList";
-import SocialClub from "../components/socialClub";
+import QuestList from "../components/questList";
 
 const Home = () => {
   return (
@@ -12,7 +11,7 @@ const Home = () => {
         <Navbar />
         <Hero />
       </div>
-      <QuestionList />
+      <QuestList />
       <SocialClub />
     </div>
   );
