@@ -1,7 +1,60 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Hero = () => {
-  return <div>This is Hero</div>;
+  const [timeLeft, setTimeLeft] = useState({});
+  const [dateToGet, setDateToGet] = useState("");
+
+  const calculateTimeLeft = () => {
+    let year = new Date().getFullYear();
+    let difference = +new Date(dateToGet) - +new Date();
+
+    let timeLeft = {
+      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+      hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+      minutes: Math.floor((difference / 1000 / 60) % 60),
+      seconds: Math.floor((difference / 1000) % 60),
+    };
+    return timeLeft;
+  };
+  useEffect(() => {
+    setTimeout(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+  });
+
+  //Enter the date of release in mm/dd/yyyy
+  useEffect(() => {
+    setDateToGet("01/29/2022");
+  });
+  return (
+    <div className="text-lg flex flex-col justify-evenly items-center h-5/6">
+      <h1 className="tracking-[1.6rem] uppercase font-extralight text-2xl">
+        Stratos Presents
+      </h1>
+      <img src="/assets/Cloud-1.png" alt="Social_Club" className="h-[150px] " />
+      <h2 className="font-light tracking-[.6rem] text-2xl">
+        FIRST LINK UP OF THE YEAR:{" "}
+        <span className="font-normal">ATLANTA, GA</span>
+      </h2>
+      <div className="flex items-center justify-center text-3xl">
+        <div className="flex flex-col items-center justify-center mx-8">
+          <span className="text-7xl font-bold">{timeLeft.days}</span>Days
+        </div>
+        <div className="flex flex-col items-center justify-center mx-8">
+          <span className="text-7xl font-bold">{timeLeft.hours}</span>Hours
+        </div>
+        <div className="flex flex-col items-center justify-center mx-8">
+          <span className="text-7xl font-bold">{timeLeft.minutes}</span>Minutes
+        </div>
+        <div className="flex flex-col items-center justify-center mx-8">
+          <span className="text-7xl font-bold">{timeLeft.seconds}</span>Seconds
+        </div>
+      </div>
+      <div className="font-light tracking-[.6rem] text-2xl">
+        {dateToGet.replaceAll("/", ".")}
+      </div>
+    </div>
+  );
 };
 
 export default Hero;
