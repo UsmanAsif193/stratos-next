@@ -3,7 +3,11 @@ import React from "react";
 import Navbar from "../components/navbar";
 import Hero from "../components/hero";
 import QuestList from "../components/questList";
-import Schedule from "../components/schedule";
+import dynamic from "next/dynamic";
+
+const Schedule = dynamic(() => import("../components/schedule"), {
+  ssr: false,
+});
 
 const Home = () => {
   return (
