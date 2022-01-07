@@ -67,7 +67,7 @@ const QuestList = () => {
         </div>
         <div className="flex flex-col items-center">
           <h2 className="tracking-[9px] text-black font-semibold py-10 text-lg">
-            JOIN THE QUESTLIST
+            JOIN THE GUESTLIST
           </h2>
           <form className="w-full max-w-lg">
             <div className="flex flex-wrap -mx-3 mb-2">
