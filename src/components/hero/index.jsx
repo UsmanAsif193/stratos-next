@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Fade from "react-reveal/Fade";
 
 const Hero = () => {
   const [timeLeft, setTimeLeft] = useState({});
@@ -26,49 +27,51 @@ const Hero = () => {
     setDateToGet("01/29/2022");
   });
   return (
-    <div className="text-lg flex flex-col justify-evenly items-center h-5/6 md:pt-12">
-      <h1 className="tracking-[1.6rem] uppercase font-extralight text-xl text-center sm:text-2xl">
-        Stratos Presents
-      </h1>
-      <img
-        src="/assets/Cloud-1.png"
-        alt="Social_Club"
-        className="lg:h-[120px] 2xl:h-[135px] "
-      />
-      <h2 className="text-center font-light tracking-[.6rem] text-xl sm:text-2xl">
-        FIRST LINK UP OF THE YEAR:{" "}
-        <span className="font-normal">ATLANTA, GA</span>
-      </h2>
-      <div className="items-center justify-center text-lg md:text-3xl flex">
-        <div className="flex flex-col items-center justify-center mx-2 md:mx-8">
-          <span className="text-2xl md:text-7xl font-bold">
-            {timeLeft.days}
-          </span>
-          Days
+    <Fade top>
+      <div className="text-lg flex flex-col justify-evenly items-center h-5/6 md:pt-12">
+        <h1 className="tracking-[1.6rem] uppercase font-extralight text-xl text-center sm:text-2xl">
+          Stratos Presents
+        </h1>
+        <img
+          src="/assets/Cloud-1.png"
+          alt="Social_Club"
+          className="lg:h-[120px] 2xl:h-[135px] "
+        />
+        <h2 className="text-center font-light tracking-[.6rem] text-xl sm:text-2xl">
+          FIRST LINK UP OF THE YEAR:{" "}
+          <span className="font-normal">ATLANTA, GA</span>
+        </h2>
+        <div className="items-center justify-center text-lg md:text-3xl flex">
+          <div className="flex flex-col items-center justify-center mx-2 md:mx-8">
+            <span className="text-2xl md:text-7xl font-bold">
+              {timeLeft.days}
+            </span>
+            Days
+          </div>
+          <div className="flex flex-col items-center justify-center mx-2 md:mx-8">
+            <span className="text-2xl md:text-7xl font-bold">
+              {timeLeft.hours}
+            </span>
+            Hours
+          </div>
+          <div className="flex flex-col items-center justify-center mx-2 md:mx-8">
+            <span className="text-2xl md:text-7xl font-bold">
+              {timeLeft.minutes}
+            </span>
+            Minutes
+          </div>
+          <div className="flex flex-col items-center justify-center mx-2 md:mx-8">
+            <span className="text-2xl md:text-7xl font-bold">
+              {timeLeft.seconds}
+            </span>
+            Seconds
+          </div>
         </div>
-        <div className="flex flex-col items-center justify-center mx-2 md:mx-8">
-          <span className="text-2xl md:text-7xl font-bold">
-            {timeLeft.hours}
-          </span>
-          Hours
-        </div>
-        <div className="flex flex-col items-center justify-center mx-2 md:mx-8">
-          <span className="text-2xl md:text-7xl font-bold">
-            {timeLeft.minutes}
-          </span>
-          Minutes
-        </div>
-        <div className="flex flex-col items-center justify-center mx-2 md:mx-8">
-          <span className="text-2xl md:text-7xl font-bold">
-            {timeLeft.seconds}
-          </span>
-          Seconds
+        <div className="font-light tracking-[.6rem] text-xl sm:text-2xl">
+          {dateToGet && dateToGet.replaceAll("/", ".")}
         </div>
       </div>
-      <div className="font-light tracking-[.6rem] text-xl sm:text-2xl">
-        {dateToGet && dateToGet.replaceAll("/", ".")}
-      </div>
-    </div>
+    </Fade>
   );
 };
 
