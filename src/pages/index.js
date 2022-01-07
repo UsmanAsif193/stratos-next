@@ -3,6 +3,7 @@ import React from "react";
 import Navbar from "../components/navbar";
 import Hero from "../components/hero";
 import QuestionList from "../components/questionList";
+import SocialClub from "../components/socialClub";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
         <Hero />
       </div>
       <QuestionList />
+      <SocialClub />
     </div>
   );
 };
