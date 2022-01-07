@@ -2,6 +2,8 @@ import React from "react";
 
 import Navbar from "../components/navbar";
 import Hero from "../components/hero";
+import QuestionList from "../components/questionList";
+
 const Home = () => {
   return (
     <div className="min-h-screen">
@@ -9,6 +11,7 @@ const Home = () => {
         <Navbar />
         <Hero />
       </div>
+      <QuestionList />
     </div>
   );
 };
