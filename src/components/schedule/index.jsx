@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
-import locomotiveScroll from "locomotive-scroll";
-import Fade from "react-reveal/Fade";
+import { Zoom } from "react-reveal";
 
 const ServicesCard = ({ title, time }) => (
   <div className="flex flex-col justify-start items-start p-2 mt-2 md:p-3 md:m-2">
@@ -10,17 +9,9 @@ const ServicesCard = ({ title, time }) => (
 );
 
 const SocialClub = () => {
-  const scrollRef = React.createRef();
-
-  useEffect(() => {
-    const scroll = new locomotiveScroll({
-      el: scrollRef.current,
-      smooth: true,
-    });
-  });
   return (
-    <Fade left>
-      <div className="flex min-h-screen w-full flex-col md:flex-row justify-center bg-cloud-image-index-2 bg-cover bg-blend-soft-light md:bg-blend-normal text-white items-center">
+    <Zoom right>
+      <div className="flex min-h-screen w-full flex-col md:flex-row justify-center bg-cloud-image-index-2 bg-cover bg-blend-soft-light bg-blend-normal text-white items-center">
         <div className="grid grid-cols-1 mf:grid-cols-2 items-center justify-between md:mt-0 md:p-20 md:py-12 md:px-4">
           <div className="flex flex-col justify-evenly items-center h-full md:pl-20 px-4 mt-24 md:mt-0">
             <h1 className="tracking-[.7rem] uppercase font-extralight text-xl">
@@ -71,7 +62,7 @@ const SocialClub = () => {
           </div>
         </div>
       </div>
-    </Fade>
+    </Zoom>
   );
 };
 

@@ -2,7 +2,7 @@ import React from "react";
 
 import Navbar from "../components/navbar";
 import Hero from "../components/hero";
-import QuestList from "../components/questList";
+import GuestList from "../components/guestList";
 import dynamic from "next/dynamic";
 
 const Schedule = dynamic(() => import("../components/schedule"), {
@@ -16,7 +16,7 @@ const Home = () => {
         <Navbar />
         <Hero />
       </div>
-      <QuestList />
+      <GuestList />
       <Schedule />
     </div>
   );
