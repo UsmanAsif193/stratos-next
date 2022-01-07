@@ -1,7 +1,12 @@
 import React from "react";
+import QuestionList from "../components/questionList";
 
 const Home = () => {
-  return <div>This is Home</div>;
+  return (
+    <div>
+      <QuestionList />
+    </div>
+  );
 };
 
 export default Home;
