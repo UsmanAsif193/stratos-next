@@ -4,7 +4,7 @@ import { Fade } from "react-reveal";
 const AboutStratos = () => {
   return (
     <Fade bottom>
-      <div className="min-h-screen bg-about-startos bg-cover overflow-hidden">
+      <section className="min-h-screen bg-about-startos bg-cover overflow-hidden">
         <div className=" md:mt-0 md:p-20 md:pb-0 md:py-12 md:px-4 min-h-screen">
           <div className="p-20 pb-0 md:pl-20 px-4 mt-24 md:mt-0 h-full">
             <div className="flex w-full justify-center items-center">
@@ -54,7 +54,7 @@ const AboutStratos = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </Fade>
   );
 };

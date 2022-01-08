@@ -28,7 +28,7 @@ const Hero = () => {
   });
   return (
     <Fade top>
-      <div className="text-lg flex flex-col justify-evenly items-center h-5/6 md:pt-12">
+      <section className="text-lg flex flex-col justify-evenly items-center h-5/6 md:pt-12">
         <h1 className="tracking-[1.6rem] uppercase font-extralight text-xl text-center sm:text-2xl">
           Stratos Presents
         </h1>
@@ -70,7 +70,7 @@ const Hero = () => {
         <div className="font-light tracking-[.6rem] text-xl sm:text-2xl">
           {dateToGet && dateToGet.replaceAll("/", ".")}
         </div>
-      </div>
+      </section>
     </Fade>
   );
 };

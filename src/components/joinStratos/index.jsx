@@ -2,7 +2,7 @@ import React from "react";
 
 const JoinStratos = () => {
   return (
-    <div className="flex items-center justify-center flex-wrap h-screen pt-20 px-8 md:pt-0">
+    <section className="flex items-center justify-center flex-wrap h-screen pt-20 px-8 md:pt-0">
       <div className="w-[600px]">
         <div>
           <h2 className="text-xl md:text-2xl">
@@ -18,16 +18,16 @@ const JoinStratos = () => {
             Be the first to have access to Stratos opportunities
           </h3>
         </div>
-        <div class="flex items-center">
-          <div class="relative">
+        <div className="flex items-center">
+          <div className="relative">
             <input
               type="text"
-              class="h-10 w-[90vw] md:h-12 md:w-[550px] pl-10 pr-20 placeholder-white bg-transparent border-2 rounded-lg z-0 focus:shadow focus:outline-none"
+              className="h-10 w-[90vw] md:h-12 md:w-[550px] pl-10 pr-20 placeholder-white bg-transparent border-2 rounded-lg z-0 focus:shadow focus:outline-none"
               placeholder="Email"
             />
-            <div class="absolute top-0 right-0">
+            <div className="absolute top-0 right-0">
               {" "}
-              <button class=" h-10 w-28 md:h-12 md:w-40 text-black rounded-lg bg-white hover:bg-gray">
+              <button className=" h-10 w-28 md:h-12 md:w-40 text-black rounded-lg bg-white hover:bg-gray">
                 Join
               </button>{" "}
             </div>
@@ -37,7 +37,7 @@ const JoinStratos = () => {
       <div>
         <img className="md:w-[650px]" src="assets/Header-graphic.png" alt="" />
       </div>
-    </div>
+    </section>
   );
 };
 
