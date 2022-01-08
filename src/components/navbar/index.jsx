@@ -9,12 +9,18 @@ const NavbarItem = ({ title, classProps, link }) => {
   );
 };
 
-const Navbar = () => {
+const Navbar = ({ blackColor }) => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <div className="pt-8 md:px-24 px-8">
       <div className="items-center text-lg font-normal justify-between hidden md:flex">
-        <h1 className="tracking-[.7rem] uppercase font-extralight">Stratos</h1>
+        <h1
+          className={`${
+            blackColor && "text-black"
+          } tracking-[.7rem] uppercase font-extralight`}
+        >
+          Stratos
+        </h1>
         <div>
           <ul className="flex">
             <NavbarItem title={"Home"} link="/" />
@@ -23,7 +29,11 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="cursor-pointer">
-          <NavbarItem title={"Contact Us"} classProps={"list-none"} link="/" />
+          <NavbarItem
+            title={"Contact Us"}
+            classProps={`list-none ${blackColor && "text-[#4a9fb1]"}`}
+            link="/"
+          />
         </div>
       </div>
       <div className=" md:hidden">
@@ -63,7 +73,9 @@ const Navbar = () => {
               />
               <NavbarItem
                 title={"Contact Us"}
-                classProps={"list-none my-2 text-lg"}
+                classProps={`list-none my-2 text-lg ${
+                  blackColor && "text-[#4a9fb1]"
+                }`}
                 link="/"
               />
             </ul>

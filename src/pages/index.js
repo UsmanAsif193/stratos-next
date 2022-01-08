@@ -5,6 +5,7 @@ import Hero from "../components/hero";
 import GuestList from "../components/guestList";
 import dynamic from "next/dynamic";
 
+
 const Schedule = dynamic(() => import("../components/schedule"), {
   ssr: false,
 });
