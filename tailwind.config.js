@@ -12,6 +12,7 @@ module.exports = {
           "url(/assets/Sky-Background2-Section-2.png),linear-gradient(#000000, #5a5858)",
         "about-startos":
           "linear-gradient(to left, rgb(255 255 255 / 100%), rgb(223 223 223 / 80%)),url(/assets/Futurism-Background7.jpg)",
+        "partner-1": "/assets/partners/kyte-hover.svg",
       },
     },
   },
