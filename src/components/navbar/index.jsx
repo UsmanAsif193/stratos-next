@@ -24,8 +24,8 @@ const Navbar = ({ blackColor }) => {
         <div>
           <ul className="flex">
             <NavbarItem title={"Home"} link="/" />
-            <NavbarItem title={"About Stratos"} link="/" />
-            <NavbarItem title={"The Social Club"} link="/" />
+            <NavbarItem title={"About Stratos"} link="#about-stratos" />
+            <NavbarItem title={"The Social Club"} link="#social-club" />
           </ul>
         </div>
         <div className="cursor-pointer">
