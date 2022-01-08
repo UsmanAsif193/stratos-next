@@ -22,12 +22,12 @@ const JoinStratos = () => {
           <div className="relative">
             <input
               type="text"
-              className="h-10 w-[90vw] md:h-12 md:w-[550px] pl-10 pr-20 placeholder-white bg-transparent border-2 rounded-lg z-0 focus:shadow focus:outline-none"
+              className="h-12 w-[90vw] md:h-12 md:w-[550px] pl-4 md:pl-8 pr-20 placeholder-white bg-transparent border-2 rounded-lg z-0 focus:shadow focus:outline-none"
               placeholder="Email"
             />
-            <div className="absolute top-0 right-0">
+            <div className="  absolute top-0 right-0">
               {" "}
-              <button className=" h-10 w-28 md:h-12 md:w-40 text-black rounded-lg bg-white hover:bg-gray">
+              <button className="h-12 w-28 md:h-12 md:w-40 text-black rounded-lg bg-white hover:bg-black hover:text-white hover:border-white hover:border-2">
                 Join
               </button>{" "}
             </div>

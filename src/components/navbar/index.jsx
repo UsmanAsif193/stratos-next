@@ -63,12 +63,12 @@ const Navbar = ({ blackColor }) => {
               <NavbarItem title={"Home"} link="/" classProps="my-2 text-lg" />
               <NavbarItem
                 title={"About Stratos"}
-                link="/"
+                link="#about-stratos"
                 classProps="my-2 text-lg"
               />
               <NavbarItem
                 title={"The Social Club"}
-                link="/"
+                link="#social-club"
                 classProps="my-2 text-lg"
               />
               <NavbarItem
