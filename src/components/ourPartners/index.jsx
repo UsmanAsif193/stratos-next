@@ -51,7 +51,7 @@ const OurPartners = () => {
             />
           </div>
         </div>
-        <div className="flex items-start justify-center flex-col pl-12 md:pl-0">
+        <div className="flex items-start justify-center flex-col px-4 md:pl-0">
           <div className="flex items-center justify-center my-4">
             <i
               className="fa fa-envelope mx-2 text-[#72c0c9] text-xl"
