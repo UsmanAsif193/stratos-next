@@ -55,7 +55,7 @@ const SocialClub = () => {
                 </h1>
               </div>
               <div className="flex flex-col items-start mt-4">
-                <ServicesCard time="7pm" title="Drinks & Hors D'oeuvres" />
+                <ServicesCard time="7pm" title="Drinks & Chat" />
                 <ServicesCard time="7:45pm" title="Opening Remarks" />
                 <ServicesCard time="8pm" title="Networking Breakout" />
                 <ServicesCard time="8:45pm" title="Speaker" />
