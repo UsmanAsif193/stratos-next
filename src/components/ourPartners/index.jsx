@@ -14,7 +14,7 @@ const OurPartners = () => {
     <Zoom left>
       <section className="p-20 px-12 min-h-screen md:h-screen">
         <div className="flex justify-center items-center">
-          <h1 className="tracking-[.7rem] uppercase font-light text-2xl md:text-3xl">
+          <h1 className="tracking-[.7rem] uppercase font-light text-2xl md:text-3xl text-center">
             OUR PARTNERS
           </h1>
         </div>
