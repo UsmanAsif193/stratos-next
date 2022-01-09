@@ -18,7 +18,7 @@ const OurPartners = () => {
             OUR PARTNERS
           </h1>
         </div>
-        <div className="flex justify-center items-center h-full">
+        <div className="flex justify-center items-center h-5/6">
           <div className="flex flex-wrap items-center justify-center mt-24 lg:mt-0">
             <SinglePartner
               Src={require("../../assets-partners/acadia-hover.svg").default}
@@ -49,6 +49,19 @@ const OurPartners = () => {
               Src={require("../../assets-partners/verkada-hover.svg").default}
               alt="Partner 7"
             />
+          </div>
+        </div>
+        <div className="flex items-start justify-center flex-col pl-12 md:pl-0">
+          <div className="flex items-center justify-center my-4">
+            <i
+              className="fa fa-envelope mx-2 text-[#72c0c9] text-xl"
+              aria-hidden="true"
+            ></i>
+            <h3>info@meetandinnovate.com</h3>
+          </div>
+          <div className="flex items-center justify-center">
+            <i className="fas fa-phone mx-2 text-[#72c0c9] text-xl"></i>
+            <h3>770-744-5726</h3>
           </div>
         </div>
       </section>
