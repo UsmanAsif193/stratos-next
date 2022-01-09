@@ -19,7 +19,7 @@ const Navbar = ({ blackColor }) => {
             blackColor && "text-black"
           } tracking-[.7rem] uppercase font-extralight`}
         >
-          Stratos
+          <Link href={"/"}>Stratos</Link>
         </h1>
         <div>
           <ul className="flex">
