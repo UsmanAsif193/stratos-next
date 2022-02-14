@@ -1,5 +1,6 @@
 import React from "react";
 import { Fade } from "react-reveal";
+import ContactUsForm from "../components/contactUsForm";
 import JoinStratos from "../components/joinStratos";
 import Navbar from "../components/navbar";
 import OurPartners from "../components/ourPartners";
@@ -14,6 +15,9 @@ const contactUs = () => {
         </div>
       </Fade>
       <OurPartners />
+      <div className="h-screen bg-cloud-image-index bg-cover text-white">
+        <ContactUsForm />
+      </div>
     </div>
   );
 };
