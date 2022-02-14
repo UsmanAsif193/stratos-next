@@ -15,7 +15,7 @@ const contactUs = () => {
         </div>
       </Fade>
       <OurPartners />
-      <div className="h-screen bg-cloud-image-index bg-cover text-white">
+      <div className="h-screen bg-cloud-image-index bg-cover text-white overflow-hidden">
         <ContactUsForm />
       </div>
     </div>
